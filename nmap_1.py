@@ -1,4 +1,14 @@
 import nmap
+from ipaddress import IPv4Address
+from ipaddress import IPv4Network
+
+
+address_list = list()
+net = IPv4Network("10.128.10.8/29")
+for addre in net:
+    #address_list.append(addre)
+    print(addre)
+
 
 ipscanner = nmap.PortScanner()
 
