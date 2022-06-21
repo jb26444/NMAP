@@ -12,7 +12,7 @@ for addre in net:
 
 ipscanner = nmap.PortScanner()
 
-ipscanner.scan("10.128.10.11", "20-443")
+ipscanner.scan("185.33.156.0/24", "1-1024",)
 
 for host in ipscanner.all_hosts():
     print("Host : %s (%s)" % (host, ipscanner[host].hostname()))
